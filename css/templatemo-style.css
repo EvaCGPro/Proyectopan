@@ -428,9 +428,17 @@ https://templatemo.com/tm-516-known
 
 .contenedor {
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;     /* Centrado vertical */
-  min-height: 100vh;       /* Para que ocupe toda la altura de la pantalla */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  width: 100%;             /* Asegura que ocupe todo el ancho */
+  min-height: 100vh;       /* Asegura que ocupe toda la altura del visor */
+  margin: 0;               /* Quita márgenes residuales */
+}
+
+/* Asegúrate de que la imagen sea responsiva */
+.contenedor img {
+  max-width: 100%;
+  height: auto; 
 }
 
   /*---------------------------------------
